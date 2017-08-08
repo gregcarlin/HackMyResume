@@ -325,7 +325,7 @@ Definition of the JRSResume class.
             var sub;
             sub = obj[key];
             if (typeof sub === 'string' || sub instanceof String) {
-              if (_.contains(['skills', 'url', 'website', 'startDate', 'endDate', 'releaseDate', 'date', 'phone', 'email', 'address', 'postalCode', 'city', 'country', 'region'], key)) {
+              if (_.contains(['skills', 'url', 'website', 'startDate', 'endDate', 'releaseDate', 'date', 'phone', 'email', 'address', 'postalCode', 'city', 'country', 'region', 'picture'], key)) {
                 return;
               }
               if (key === 'summary') {
