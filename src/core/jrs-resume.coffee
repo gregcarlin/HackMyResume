@@ -266,7 +266,7 @@ class JRSResume extends AbstractResume
           if typeof sub == 'string' || sub instanceof String
             if _.contains(['skills','url','website','startDate','endDate',
               'releaseDate','date','phone','email','address','postalCode',
-              'city','country','region'], key)
+              'city','country','region', 'picture'], key)
               return
             if key == 'summary'
               obj[key] = HD( obj[key] )
