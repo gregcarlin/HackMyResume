@@ -101,7 +101,7 @@ Generic template helper definitions for HackMyResume / FluentCV.
       if (_.contains(reserved, dateValueSafe)) {
         return dateValue;
       }
-      dateValueMoment = moment(dateValue, dateFormat);
+      dateValueMoment = moment(dateValue);
       if (dateValueMoment.isValid()) {
         return dateValueMoment.format(dateFormat);
       }

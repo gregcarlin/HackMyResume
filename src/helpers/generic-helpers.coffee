@@ -91,7 +91,7 @@ GenericHelpers = module.exports =
     dateValueSafe = dateValue.trim().toLowerCase();
     return dateValue if _.contains reserved, dateValueSafe
 
-    dateValueMoment = moment dateValue, dateFormat
+    dateValueMoment = moment dateValue
     return dateValueMoment.format dateFormat if dateValueMoment.isValid()
     dateValue
 
